@@ -1,0 +1,416 @@
+/*
+ *  layout.css -- css stylesheet used on gnu.by
+ *
+ *  autor: pavel chebotarev <info@chepava.by>
+ *
+ *  copyright (c) 2012 pavel chebotarev.
+ */
+
+
+html,
+body
+{
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg.png');
+  background-color: #f5f5f5;
+  color: #333333;
+  font-weight: normal;
+  font-size: 11px !important;
+  line-height: 15px;
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  overflow: auto;
+}
+
+
+#p_lang
+{
+  z-index: 10;
+  left: 15%;
+  border: 0px;
+  position: relative;
+  background: none;
+  width: 70%;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#p_lang a.link,
+#p_lang a.link:visited,
+#p_lang a.link:active,
+#p_lang a.link:focus,
+#p_lang a.link:hover,
+#p_lang a.simple,
+#p_lang a.simple:visited,
+#p_lang a.simple:active,
+#p_lang a.simple:focus,
+#p_lang a.simple:hover
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 2px 0px 2px 0px;
+  background: none;
+  border: none;
+  color: #333333;
+  cursor: default;
+  font-size: 11px !important;
+  font-weight: normal;
+  line-height: 15px;
+  text-decoration: none;
+  outline: none;
+}
+#p_lang a.link:hover
+{
+  cursor: pointer;
+}
+* HTML #p_lang a.link:hover
+{
+  cursor: hand;
+}
+#p_lang a.link,
+#p_lang a.link:visited,
+#p_lang a.link:active,
+#p_lang a.link:focus,
+#p_lang a.link:hover
+{
+  text-decoration: underline;
+  color: #0060c0;
+}
+
+
+#p_head
+{
+  z-index: 5;
+  left: 15%;
+  top: 0px;
+  border: 0px;
+  position: relative;
+  background: none;
+  width: 70%;
+  height: 128px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+
+
+#p_logo
+{
+  z-index: 5;
+  top: 32px;
+  border: 0px;
+  position: relative;
+  display: block;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url('../images/logo_head.png');
+  background-color: none;
+  outline: none;
+  height: 64px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+a#logo_blue,
+a#logo_blue:visited,
+a#logo_blue:active,
+a#logo_blue:hover,
+a#logo_blue:focus,
+a#logo_red,
+a#logo_red:visited,
+a#logo_red:active,
+a#logo_red:hover,
+a#logo_red:focus,
+#p_logo a.link,
+#p_logo a.link:visited,
+#p_logo a.link:active,
+#p_logo a.link:hover,
+#p_logo a.link:focus
+{
+  z-index: 10;
+  border: 0px;
+  padding: 0px 0px 0px 80px;
+  margin: 0px;
+  height: 62px;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 44px;
+  color: #cccccc;
+  cursor: default;
+  font-size: 36px !important;
+  font-weight: bold;
+  display: block;
+  background: none;
+  outline: none;
+  float: left;
+}
+a#logo_blue:hover,
+a#logo_red:hover,
+#p_logo a.link:hover
+{
+  cursor: pointer;
+}
+* HTML #p_logo a.link:hover
+{
+  cursor: hand;
+}
+a#logo_blue,
+a#logo_blue:visited,
+a#logo_blue:active,
+a#logo_blue:hover,
+a#logo_blue:focus
+{
+  z-index: 5;
+  height: 46px;
+  color: #004080;//224a85;
+  padding: 8px 4px 8px 4px;
+}
+a#logo_red,
+a#logo_red:visited,
+a#logo_red:active,
+a#logo_red:hover,
+a#logo_red:focus
+{
+  z-index: 5;
+  color: #800000;
+  height: 46px;
+  padding: 8px 4px 8px 4px;
+}
+
+
+#p_line
+{
+  z-index: 5;
+  border: none;
+  width: 100%;
+  height: 5px;
+  display: block;
+  font-size: 0px !important;
+  line-height: 5px;
+  text-decoration: none;
+  text-transform: none;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg_line.png');
+  background-color: #333333;
+}
+
+
+#p_menu
+{
+  z-index: 10;
+  border: none;
+  position: relative;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: url('../images/bg_menu.png');
+  background-color: #c00000;
+  width: 100%;
+  padding: 14px 0px 14px 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+#p_menu a.menu,
+#p_menu a.menu:visited,
+#p_menu a.menu:active,
+#p_menu a.menu:hover,
+#p_menu a.menu:focus
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 6px 8px 6px 8px;
+  background-position: left top;
+  background-repeat: repeat;
+  background-image: none;
+  background-color: none;
+  border: none;
+  color: #f5f5f5;
+  cursor: default;
+  font-size: 14px !important;
+  line-height: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  clear: left;
+}
+#p_menu a.menu:hover
+{
+  cursor: pointer;
+  color: #e0e000;
+  background-image: url('../images/bg_menu_active.png');
+  background-color: #800000;
+}
+* HTML #p_menu a.menu:hover
+{
+  cursor: hand;
+}
+
+
+#p_data
+{
+  z-index: 10;
+  left: 15%;
+  border: 0px;
+  position: relative;
+  background: none;
+  width: 70%;
+  padding: 0px 0px 21px 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#head
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px 0px 17px 0px;
+  padding: 6px;
+  background-color: #0060c0;
+  border: none;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 21px;
+}
+a.head
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  cursor: default;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  color: #f5f5f5;
+  font-size: 17px !important;
+  line-height: 21px;
+}
+#h,
+#l,
+#p_data a.l,
+#p_data a.l:visited,
+#p_data a.l:active,
+#p_data a.l:hover,
+#p_data a.l:focus,
+#p_data a.h,
+#p_data a.h:visited,
+#p_data a.h:active,
+#p_data a.h:hover,
+#p_data a.h:focus
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  color: #7b807e;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+#l,
+#p_data a.l,
+#p_data a.l:visited,
+#p_data a.l:active,
+#p_data a.l:hover,
+#p_data a.l:focus
+{
+  font-size: 11px !important;
+  line-height: 15px;
+}
+#p_data a.l:hover,
+#p_data a.h:hover
+{
+  color: #b8bfbc;
+}
+#p_data a.h:hover,
+#p_data a.l:hover
+{
+  cursor: pointer;
+}
+* HTML #p_data a.l:hover
+{
+  cursor: hand;
+}
+#h,
+#p_data a.h,
+#p_data a.h:visited,
+#p_data a.h:active,
+#p_data a.h:hover,
+#p_data a.h:focus
+{
+  font-size: 15px !important;
+  line-height: 19px;
+}
+#l
+{
+  height: 15px;
+}
+#h
+{
+  height: 38px;
+}
+
+
+#p_footer
+{
+  z-index: 5;
+  left: 15%;
+  border: 0px;
+  position: relative;
+  background: none;
+  width: 70%;
+  padding: 11px 0px 11px 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#p_footer a.link,
+#p_footer a.link:visited,
+#p_footer a.link:active,
+#p_footer a.link:focus,
+#p_footer a.link:hover
+{
+  font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  color: #333333;
+  cursor: default;
+  font-size: 11px !important;
+  font-weight: normal;
+  line-height: 15px;
+  text-decoration: none;
+  outline: none;
+}

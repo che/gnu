@@ -1,0 +1,36 @@
+-# encoding: utf-8
+!!!
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', :lang => @locale, 'xml:lang' => @locale}
+ %head
+  %title #{GNU::CONFIGURATION[:locales][@locale][:title]}
+  %meta{'http-equiv' => 'content-type', :content => "text/html; charset=#{GNU::ENCODING_DEFAULT}"}
+  %meta{'http-equiv' => 'content-language', :content => @locale}
+  %meta{:name => 'description', :content => GNU::CONFIGURATION[:locales][@locale][:description]}
+  %meta{:name => 'keywords', :content => GNU::CONFIGURATION[:locales][@locale][:keywords]}
+  %link{:rel => 'icon', :type => 'image/x-icon', :href => "/images/#{GNU::NAME}_icon.png"}
+  %link{:rel => 'stylesheet', :href => '/stylesheets/layout.css', :media => 'all', :type => 'text/css'}
+ %body
+  %div#p_head
+   %div#p_logo
+    %a.link{:href => GNU::SEPARATOR + @locale}
+     - for i in GNU::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
+      %a{:id => "logo_#{GNU::CONFIGURATION[:locales][@locale][:logo][:color][i - 1]}", :href => GNU::SEPARATOR + @locale}#{GNU::CONFIGURATION[:locales][@locale][:logo][:text][i]}
+  %div#p_menu
+   - for i in GNU::CONFIGURATION[:locales][@locale][:menu].keys.sort
+    %a.menu{:href => GNU::SEPARATOR + @locale}#{GNU::CONFIGURATION[:locales][@locale][:menu][i]}
+  %div#p_line
+  %div#p_lang
+   - if GNU::CONFIGURATION[:locale][:list].size > 1
+    - for i in GNU::CONFIGURATION[:locale][:list]
+     - unless i == @locale
+      %a.link{:href => GNU::SEPARATOR + i}#{GNU::CONFIGURATION[:locales][i][:name]}
+      %a.simple [#{i}]&nbsp;&nbsp;
+  %div#p_data
+   %div#head
+    %a.head #{GNU::CONFIGURATION[:locales][@locale][:head][:text]}
+   - for i in GNU::CONFIGURATION[:locales][@locale][:head][:p].keys.sort
+    %p #{GNU::CONFIGURATION[:locales][@locale][:head][:p][i]}
+  %div#p_line
+  %div#p_footer
+   %a.c &copy; #{GNU::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{GNU::NAME}.
+- remove_instance_variable(:@locale)
