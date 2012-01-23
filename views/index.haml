@@ -16,8 +16,9 @@
      - for i in GNU::CONFIGURATION[:locales][@locale][:logo][:text].keys.sort
       %a{:id => "logo_#{GNU::CONFIGURATION[:locales][@locale][:logo][:color][i - 1]}", :href => GNU::SEPARATOR + @locale}#{GNU::CONFIGURATION[:locales][@locale][:logo][:text][i]}
   %div#p_menu
-   - for i in GNU::CONFIGURATION[:locales][@locale][:menu].keys.sort
-    %a.menu{:href => GNU::SEPARATOR + @locale}#{GNU::CONFIGURATION[:locales][@locale][:menu][i]}
+   %div#menu
+    - for i in GNU::CONFIGURATION[:locales][@locale][:menu].keys.sort
+     %a.menu{:href => GNU::SEPARATOR + @locale}#{GNU::CONFIGURATION[:locales][@locale][:menu][i]}
   %div#p_line
   %div#p_lang
    - if GNU::CONFIGURATION[:locale][:list].size > 1

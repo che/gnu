@@ -219,6 +219,7 @@ a#logo_red:focus
 }
 
 
+
 #p_menu
 {
   z-index: 10;
@@ -235,11 +236,25 @@ a#logo_red:focus
   text-transform: none;
   text-align: left;
 }
-#p_menu a.menu,
-#p_menu a.menu:visited,
-#p_menu a.menu:active,
-#p_menu a.menu:hover,
-#p_menu a.menu:focus
+#menu
+{
+  z-index: 10;
+  left: 15%;
+  border: none;
+  position: relative;
+  background: none;
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+}
+#menu a.menu,
+#menu a.menu:visited,
+#menu a.menu:active,
+#menu a.menu:hover,
+#menu a.menu:focus
 {
   font-family: Arial, "Lucida Sans Unicode", Verdana, sans-serif !important;
   margin: 0px;
@@ -258,14 +273,14 @@ a#logo_red:focus
   outline: none;
   clear: left;
 }
-#p_menu a.menu:hover
+#menu a.menu:hover
 {
   cursor: pointer;
   color: #e0e000;
   background-image: url('../images/bg_menu_active.png');
   background-color: #800000;
 }
-* HTML #p_menu a.menu:hover
+* HTML #menu a.menu:hover
 {
   cursor: hand;
 }
