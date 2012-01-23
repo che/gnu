@@ -32,5 +32,5 @@
     %p #{GNU::CONFIGURATION[:locales][@locale][:head][:p][i]}
   %div#p_line
   %div#p_footer
-   %a.c &copy; #{GNU::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{GNU::NAME}.
+   %a.c &copy; #{GNU::CONFIGURATION[:foundation_year]}-#{Time.now.year} #{GNU::NAME.upcase}.
 - remove_instance_variable(:@locale)

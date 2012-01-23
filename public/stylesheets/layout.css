@@ -233,7 +233,7 @@ a#logo_red:focus
   margin: 0px;
   text-decoration: none;
   text-transform: none;
-  text-align: center;
+  text-align: left;
 }
 #p_menu a.menu,
 #p_menu a.menu:visited,
