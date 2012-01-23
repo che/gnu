@@ -154,10 +154,10 @@ a#logo_red:focus,
   height: 62px;
   text-decoration: none;
   text-transform: none;
-  line-height: 44px;
+  line-height: 48px;
   color: #cccccc;
   cursor: default;
-  font-size: 36px !important;
+  font-size: 32px !important;
   font-weight: bold;
   display: block;
   background: none;
@@ -182,7 +182,7 @@ a#logo_blue:focus
 {
   z-index: 5;
   height: 46px;
-  color: #004080;//224a85;
+  color: #004080;
   padding: 8px 4px 8px 4px;
 }
 a#logo_red,
@@ -203,10 +203,10 @@ a#logo_red:focus
   z-index: 5;
   border: none;
   width: 100%;
-  height: 5px;
+  height: 4px;
   display: block;
   font-size: 0px !important;
-  line-height: 5px;
+  line-height: 4px;
   text-decoration: none;
   text-transform: none;
   position: relative;
